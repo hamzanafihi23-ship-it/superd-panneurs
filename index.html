@@ -520,7 +520,7 @@
 
     @media(max-width:640px) {
       .pain-grid { grid-template-columns: 1fr; gap: 12px; }
-      .pain-section { padding: 48px 5%; }
+      .pain-section { padding: 40px 5%; }
       .pain-card { padding: 18px 16px 16px; }
       .pain-cta-center { padding: 28px 16px; }
       .pain-cta-title { font-size: 1.15rem; }
@@ -929,29 +929,41 @@
       .form-title { font-size: 1.15rem; }
       .btn-form { font-size: 0.95rem; padding: 14px; }
       .stats-band { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; padding: 24px 5%; }
-      .stat-num { font-size: 1.6rem; }
-      .stat-label { font-size: 0.7rem; }
-      .section { padding: 48px 5%; }
+      .stat-num { font-size: 1.4rem; }
+      .stat-label { font-size: 0.66rem; }
+      .section { padding: 40px 5%; }
       h2 { font-size: clamp(1.55rem, 6vw, 2rem); }
       .s-sub { font-size: 0.9rem; margin-bottom: 32px; }
-      .service-tabs { gap: 6px; }
-      .stab { font-size: 0.78rem; padding: 8px 14px; }
-      .process-grid { grid-template-columns: 1fr; gap: 24px; }
+      .service-tabs { gap: 6px; display: grid; grid-template-columns: 1fr 1fr; }
+      .service-tabs button:last-child { grid-column: 1 / -1; }
+      .stab { font-size: 0.78rem; padding: 8px 12px; text-align: center; }
+      .process-grid { grid-template-columns: 1fr; gap: 16px; }
+      .ps-num { width: 44px; height: 44px; font-size: 1rem; margin-bottom: 12px; }
+      .ps-title { font-size: 0.9rem; }
+      .ps-desc { font-size: 0.8rem; }
       .ps-num { width: 46px; height: 46px; font-size: 1.1rem; }
       .testi-card { padding: 20px; }
+      .sp-item { font-size: 0.8rem; padding: 10px 12px; }
+      .sp-visual { padding: 20px; }
       .upsell { padding: 48px 5%; }
       .upsell-cards { gap: 10px; }
-      .upsell-card { padding: 16px 18px; }
+      .upsell-card { padding: 14px 16px; }
+      .uc-icon { font-size: 1.4rem; }
+      .uc-title { font-size: 0.88rem; }
+      .uc-desc { font-size: 0.78rem; }
       .btn-upsell { width: 100%; justify-content: center; }
       .lm-wrap { padding: 36px 5%; border-radius: 16px; margin: 0 4% 60px; }
       .lm-title { font-size: 1.35rem; }
       .cta-final { padding: 48px 5%; }
       .cf-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
       .btn-cf { width: 100%; justify-content: center; padding: 15px 20px; font-size: 1rem; }
-      .cf-trust { gap: 12px; }
-      footer { flex-direction: column; text-align: center; padding: 24px 5%; gap: 14px; }
+      .cf-trust { gap: 10px; display: grid; grid-template-columns: 1fr 1fr; justify-items: center; }
+      footer { flex-direction: column; text-align: center; padding: 20px 5%; gap: 10px; }
+      .f-left { font-size: 0.72rem; }
       .f-links { justify-content: center; }
 
+      /* Badge hero 1 ligne */
+      .hero-badge { font-size: 0.65rem; padding: 5px 10px; }
       /* Urgency bar — 1 seule ligne */
       .urgency-bar { flex-wrap: nowrap; }
       .ub-hide-mobile { display: none; }
@@ -961,10 +973,13 @@
       /* Nav — empêcher débordement bouton */
       .nav-brand { min-width: 0; flex: 1; overflow: hidden; }
       .nav-name { font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .btn-nav { white-space: nowrap; flex-shrink: 0; padding: 8px 12px; font-size: 0.76rem !important; }
+      .btn-nav { white-space: nowrap; flex-shrink: 0; padding: 7px 12px; font-size: 0.72rem !important; letter-spacing: 0; }
+      .nav-right { gap: 8px; }
+      .nav-trust { display: none; }
 
       /* Boutons service full width mobile */
       .btn-sp { width: 100%; justify-content: center; }
+      .sp-desc { hyphens: auto; word-break: break-word; }
 
       /* CTA final titre — pas d'orphelin */
       .cf-title { font-size: clamp(1.5rem, 5.5vw, 2rem); }
@@ -983,7 +998,7 @@
       .hero-ctas { gap: 8px; }
       .nav-brand { gap: 6px; }
       .nav-name { font-size: 0.78rem; }
-      .btn-nav { padding: 6px 10px; font-size: 0.72rem !important; }
+      .btn-nav { padding: 6px 9px; font-size: 0.68rem !important; }
       .ub-phone { font-size: 0.95rem; }
       .ub-text { font-size: 0.66rem; }
       .lm-chips { display: none; }
