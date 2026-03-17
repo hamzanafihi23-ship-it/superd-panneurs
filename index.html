@@ -893,7 +893,8 @@
       .hero { grid-template-columns: 1fr; min-height: auto; }
       .hero-left { padding: 56px 5% 40px; }
       .hero-right { padding: 36px 5%; box-shadow: 0 -8px 32px rgba(10,22,40,0.15); }
-      .hero-photo::after { background: linear-gradient(180deg, rgba(10,24,40,0.88) 0%, rgba(10,24,40,0.75) 60%, rgba(10,24,40,0.55) 100%); }
+      .hero-photo::after { background: linear-gradient(180deg, rgba(10,24,40,0.82) 0%, rgba(10,24,40,0.65) 50%, rgba(10,24,40,0.30) 100%); }
+      .hero-photo { background-position: 35% 75%; background-size: cover; }
       .service-panel.active { grid-template-columns: 1fr; gap: 24px; }
       .upsell-inner { grid-template-columns: 1fr; gap: 32px; }
       .process-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -916,7 +917,6 @@
       .nav-avatar { width: 32px; height: 32px; font-size: 0.78rem; }
       .nav-name { font-size: 0.88rem; }
       .nav-role { display: none; }
-      .btn-nav { padding: 7px 14px; font-size: 0.78rem !important; }
       .hero-left { padding: 44px 5% 32px; }
       h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); }
       .hero-sub { font-size: 0.95rem; }
@@ -973,8 +973,7 @@
       /* Nav — empêcher débordement bouton */
       .nav-brand { min-width: 0; flex: 1; overflow: hidden; }
       .nav-name { font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .btn-nav { white-space: nowrap; flex-shrink: 0; padding: 7px 12px; font-size: 0.72rem !important; letter-spacing: 0; }
-      .nav-right { gap: 8px; }
+      .btn-nav { display: none; }
       .nav-trust { display: none; }
 
       /* Boutons service full width mobile */
@@ -998,7 +997,7 @@
       .hero-ctas { gap: 8px; }
       .nav-brand { gap: 6px; }
       .nav-name { font-size: 0.78rem; }
-      .btn-nav { padding: 6px 9px; font-size: 0.68rem !important; }
+      .btn-nav { display: none; }
       .ub-phone { font-size: 0.95rem; }
       .ub-text { font-size: 0.66rem; }
       .lm-chips { display: none; }
